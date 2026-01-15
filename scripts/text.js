@@ -1,7 +1,7 @@
 // text.js
 window.TEXTS = {
   ru: {
-    nav: { about: "О враче", services: "Услуги", contacts: "Контакты" },
+    nav: { about: "О враче", services: "Услуги", contacts: "Контакты" , video: "Медиа"},
 
     hero: {
       title: "Алимходжаева Лола Тельмановна",
@@ -60,6 +60,10 @@ window.TEXTS = {
         },
       },
     },
+    video: {
+      title: "Медиа",
+      desc: "Основные направления приёма. Список можно расширить под ваши реальные услуги."
+    },
     about: {
       title: "Трудовая деятельность",
       desc: "Основные направления приёма. Список можно расширить под ваши реальные услуги.",
@@ -105,7 +109,7 @@ window.TEXTS = {
   },
 
   uz: {
-    nav: { about: "Shifokor haqida", services: "Xizmatlar", contacts: "Kontaktlar" },
+    nav: { about: "Shifokor haqida", services: "Xizmatlar", contacts: "Kontaktlar"  , video: "Media"},
 
     hero: {
       title: "Alimkhodjaeva Lola Telmanovna",
