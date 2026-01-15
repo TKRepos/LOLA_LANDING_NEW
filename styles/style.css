@@ -381,7 +381,7 @@ li {
 .about__content-image {
   padding-top: 10px;
   justify-self: center;
-  max-width: 50%;
+  max-width: 35%;
   max-height: inherit;
   overflow: hidden;
 }
