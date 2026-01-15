@@ -21,6 +21,7 @@
 .header {
   position: sticky;
   padding: 10px;
+  z-index: 1;
   background: var(--header-background-color);
   top: 0;
 }
@@ -333,6 +334,80 @@ li {
   color: var(--text-color-main);
 }
 
+.about {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+    45deg,
+    rgba(244, 235, 220, 0.5) 30%,
+    rgb(149 130 124 / 60%) 100%
+  );
+}
+
+.about__container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.about .container_size_limit {
+  max-block-size: none;
+}
+
+.about__head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--text-color-main);
+}
+
+.about__title {
+  font-size: 26px;
+}
+
+.about__desc {
+  font-size: 20px;
+}
+
+.about__content {
+  display: flex;
+  gap: 10px;
+}
+
+.about__content-image {
+  padding-top: 10px;
+  justify-self: center;
+  max-width: 50%;
+  max-height: inherit;
+  overflow: hidden;
+}
+
+.about__image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about .cards {
+  grid-template-columns: 1fr;
+}
+
+.about .card__title {
+  font-size: 26px;
+}
+
+.about .list {
+  gap: 10px;
+}
+
+.about li {
+  font-size: 22px;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(16px);
@@ -344,6 +419,11 @@ li {
   transform: translateY(0);
 }
 
+#services,
+#about {
+  scroll-margin-top: 84px;
+}
+
 @media (width <= 1440px) {
   .container_size_limit {
     padding: 0 20px;
@@ -351,10 +431,6 @@ li {
 }
 
 @media (width <= 1024px) {
-  .header {
-    position: relative;
-  }
-
   .hero__title {
     font-size: 70px;
     align-self: center;
@@ -367,9 +443,23 @@ li {
   .hero__actions {
     align-self: center;
   }
+
+  .about__container {
+    gap: 0;
+  }
+
+  .about__content {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
 }
 
 @media (width <= 768px) {
+  .header {
+    position: relative;
+  }
+
   .header__nav {
     flex-direction: column;
     gap: 0;
@@ -392,7 +482,7 @@ li {
     max-block-size: none;
   }
 
-  .hero .container_size_limit  {
+  .hero .container_size_limit {
     max-block-size: 600px;
   }
 
@@ -435,5 +525,10 @@ li {
 
   .card__icon {
     display: none;
+  }
+
+  #services,
+  #about {
+    scroll-margin-top: 0;
   }
 }
