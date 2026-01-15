@@ -281,8 +281,8 @@
   font-size: 26px;
 }
 
-.services__desc{
-font-size: 20px;
+.services__desc {
+  font-size: 20px;
 }
 
 .cards {
@@ -324,7 +324,7 @@ font-size: 20px;
 }
 
 .card__title {
- color: var(--text-color-main);
+  color: var(--text-color-main);
 }
 
 .list {
@@ -355,6 +355,10 @@ li {
 }
 
 @media (width <= 1024px) {
+  .header {
+    position: relative;
+  }
+
   .hero__title {
     font-size: 70px;
     align-self: center;
@@ -389,7 +393,11 @@ li {
   }
 
   .container_size_limit {
-    max-block-size: 607px;
+    max-block-size: none;
+  }
+
+  .hero .container_size_limit  {
+    max-block-size: 600px;
   }
 
   .hero__content-text {
@@ -407,5 +415,29 @@ li {
 
   .hero__actions {
     padding-bottom: 20px;
+  }
+
+  .hero__content-image {
+    padding-bottom: 10px;
+  }
+
+  .services__container {
+    align-items: stretch;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card__icon {
+    display: none;
   }
 }
