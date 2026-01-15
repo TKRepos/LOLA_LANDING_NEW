@@ -453,6 +453,10 @@ li {
     align-items: center;
     gap: 0;
   }
+
+  .about__content-image {
+    max-width: 50%;
+  }
 }
 
 @media (width <= 768px) {
@@ -525,6 +529,10 @@ li {
 
   .card__icon {
     display: none;
+  }
+
+  .about__content-image {
+    max-width: 70%;
   }
 
   #services,
