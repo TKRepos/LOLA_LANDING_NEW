@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лола Алимходжаева Онкомамолог</title>
+    <link rel="icon" href="./images/logo_1_512.png" sizes="any" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./scripts/text.js"></script>
+    <script src="./scripts/main.js"></script>
+  </head>
+  <body class="page">
+    <div class="page__overlay"></div>
+    <header class="header" id="top">
+      <div class="header__container container_size_limit">
+        <a class="logo header__logo" href="#top" aria-label="Home">
+          <img
+            class="header__logo-image"
+            src="./images/logo_1_512.png"
+            alt="Логотип: Лола Алимходжаева"
+          />
+        </a>
+
+        <nav class="header__nav" aria-label="Main navigation">
+          <a
+            class="header__nav-link"
+            href="#services"
+            data-i18n="nav.services"
+          ></a>
+          <a class="header__nav-link" href="#about" data-i18n="nav.about"></a>
+          <a
+            class="header__nav-link"
+            href="#contacts"
+            data-i18n="nav.contacts"
+          ></a>
+        </nav>
+
+        <div class="header__menu">
+          <div class="header__lang" role="group" aria-label="Language switch">
+            <button class="btn header__lang-btn" type="button" data-lang="ru">RU</button>
+            <button class="btn header__lang-btn" type="button" data-lang="uz">UZ</button>
+          </div>
+
+          <!-- Burger -->
+          <button
+            class="header__menu-burger"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+      <div class="header__menu-mobile" aria-hidden="true">
+        <div class="container mobile__inner">
+          <a class="mobile__link" href="#about" data-i18n="nav.about"></a>
+          <a class="mobile__link" href="#services" data-i18n="nav.services"></a>
+          <a class="mobile__link" href="#contacts" data-i18n="nav.contacts"></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__container container_size_limit">
+          <div class="hero__content-text">
+            <h1 class="hero__title" data-i18n="hero.title"></h1>
+            <p class="hero__subtitle" data-i18n="hero.subtitle"></p>
+            <div class="hero__actions">
+              <a
+                class="btn hero__btn"
+                id="bookBtn"
+                href="#"
+                target="_blank"
+                rel="noopener"
+                data-i18n="hero.btnPrimary"
+              ></a>
+            </div>
+          </div>
+          <div class="hero__content-image">
+            <img
+              class="hero__image hero__image-crop"
+              src="./images/lola_full.png"
+              alt="Фото: Лола Алимходжаева"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="services">
+        <div class="services__container container_size_limit">
+         
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
