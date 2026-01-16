@@ -109,7 +109,12 @@ function initSmoothScroll() {
   document.addEventListener("click", (e) => {
     const a = e.target.closest('a[href^="#"]');
     if (!a) return;
+
     const href = a.getAttribute("href");
+
+    // Игнорируем пустые якоря
+    if (!href || href === "#" || href === "#!") return;
+
     const target = document.querySelector(href);
     if (!target) return;
 
@@ -118,6 +123,7 @@ function initSmoothScroll() {
     closeMobileMenu();
   });
 }
+
 
 function initFooterYear() {
   const y = document.getElementById("year");

@@ -5,10 +5,6 @@
 }
 
 body {
-  min-inline-size: 400px;
-  /*
-  max-inline-size: 1440px;
-  */
   margin: 0 auto;
 }
 
