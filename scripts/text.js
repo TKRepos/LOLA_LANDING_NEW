@@ -169,24 +169,40 @@ window.TEXTS = {
       },
     },
 
+    video: {
+      title: "Медиа",
+      desc: "Основные направления приёма. Список можно расширить под ваши реальные услуги."
+    },
     about: {
-      title: "Shifokor haqida",
-      p1:
-        "Maqsad — muammoni vaqtida ko‘rish va to‘g‘ri taktika tanlashga yordam berish: xotirjam, ehtiyotkor va professional tarzda.",
-      pills: {
-        p1: "Dalillarga asoslangan",
-        p2: "Aniq diagnostika",
-        p3: "Ortiqchasiz taktika",
-        p4: "Bemorni kuzatish",
-      },
-      p2:
-        "Agar qabul kerak-kerak emasligiga shubha qilsangiz — yaxshisi aniqlashtiring. Erta konsultatsiya ko‘p narsani hal qiladi.",
-      btn: "Telegram’da yozilish",
-      panelTitle: "Yondashuv qisqacha",
-      panel: {
-        i1: "E’tiborli ko‘rik va tushunarli tavsiyalar",
-        i2: "Erta diagnostika va profilaktika",
-        i3: "Har bosqichda qo‘llab-quvvatlash",
+      title: "Трудовая деятельность",
+      desc: "Основные направления приёма. Список можно расширить под ваши реальные услуги.",
+      cards: {
+        c1: {
+          title: "2025 - н. в.",
+          items: [
+            "Заведующий отделением маммологии Национального научного центра онкологии Министерства здравоохранения Республики Узбекистан",
+            "Специальность: врач – маммолог в ООО «N’Medical»",
+          ],
+        },
+        c2: {
+          title: "2001 - 2011 гг",
+          items: [
+            "Старший научный сотрудник отделения маммологии, Национальный научный центр онкологии, Узбекистан",
+          ],
+        },
+        c3: {
+          title: "1995 - 2001 гг",
+          items: [
+            "Врач-онколог, отделение маммологии, Национальный научный центр онкологии, Узбекистан",
+          ],
+        },
+
+        c4: {
+          title: "1994 - 1995 гг",
+          items: [
+            "Клиническая ординатура, Национальный научный центр онкологии, Узбекистан",
+          ],
+        },   
       },
     },
 

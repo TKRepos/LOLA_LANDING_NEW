@@ -2,8 +2,7 @@
 
 const DEFAULT_LANG = "ru";
 
-// ВАЖНО: сюда вставь реальную ссылку на Telegram
-const TELEGRAM_BOOK_URL = "https://t.me/your_username_or_bot?start=book";
+const CONTACT_LINK = "tel:+998903481730";
 
 function getNested(obj, path) {
   return path.split(".").reduce((acc, key) => (acc ? acc[key] : undefined), obj);
@@ -46,7 +45,7 @@ function applyTexts(lang) {
   const book2 = document.getElementById("bookBtn2");
   const tgFooter = document.getElementById("telegramLinkFooter");
   [book1, book2, tgFooter].forEach((a) => {
-    if (a) a.href = TELEGRAM_BOOK_URL;
+    if (a) a.href = CONTACT_LINK;
   });
 
   setActiveLangButtons(lang);
