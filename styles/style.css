@@ -96,6 +96,7 @@
 
 .header__logo:hover,
 .btn:hover,
+.footer__logo:hover,
 .footer__contacts-link:hover {
   transform: scale(1.1);
 }
