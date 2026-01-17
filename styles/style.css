@@ -2,13 +2,18 @@
   position: relative;
   color: var(--accent-color);
   font-family: var(--main-font), sans-serif;
+}
+
+.page-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
   background-image: var(
     --page-background-image,
-    url('../images/background.jpg')
+    url("../images/background.jpg")
   );
-  background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  background-position: center;
 }
 
 .page__overlay {
@@ -60,7 +65,9 @@
   font-size: 26px;
   font-style: normal;
   text-decoration: none;
-  transition: border-color 1s, transform 0.5s;
+  transition:
+    border-color 1s,
+    transform 0.5s;
   transform: scale(1);
 }
 
@@ -395,7 +402,9 @@ li {
 
 .reveal {
   opacity: 0;
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
   transition-delay: var(--d, 0ms);
   transform: translateY(16px);
 }
@@ -452,11 +461,9 @@ li {
   cursor: pointer;
 }
 
-
 .footer__menu {
   justify-self: end;
 }
-
 
 #services,
 #media,
