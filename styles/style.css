@@ -543,15 +543,20 @@ li {
   }
 
   .hero__title {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .hero__subtitle {
     text-align: center;
+    font-size: 18px;
   }
 
   .hero__actions {
     padding-bottom: 20px;
+  }
+
+  .hero__btn {
+    font-size: 18px;
   }
 
   .hero__content-image {
