@@ -537,7 +537,7 @@ li {
   }
 
   .hero .container_size_limit {
-    max-block-size: 600px;
+    max-block-size: 700px;
   }
 
   .hero__content-text {
@@ -551,7 +551,7 @@ li {
 
   .hero__subtitle {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .hero__actions {
